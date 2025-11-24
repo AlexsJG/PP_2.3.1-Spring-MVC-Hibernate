@@ -1,4 +1,4 @@
-package web.UserService;
+package web.CarService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class CarServiceImpl implements CarService {
     private final CarDAO carDAOimpl;
 
     @Autowired
-    public UserServiceImpl(CarDAO carDAOimpl) {
+    public CarServiceImpl(CarDAO carDAOimpl) {
         this.carDAOimpl = carDAOimpl;
     }
 

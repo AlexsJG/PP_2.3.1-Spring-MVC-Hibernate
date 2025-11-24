@@ -1,10 +1,10 @@
-package web.UserService;
+package web.CarService;
 
 import web.models.Car;
 
 import java.util.List;
 
-public interface UserService {
+public interface CarService {
 
     List<Car> getCars(int count);
 }
