@@ -1,4 +1,4 @@
-package web.dao;
+package web.usersForTable;
 
 import org.springframework.stereotype.Component;
 import web.model.User;
