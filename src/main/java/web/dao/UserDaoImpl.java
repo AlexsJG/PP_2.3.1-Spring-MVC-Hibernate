@@ -33,9 +33,7 @@ public class UserDaoImpl implements UserDao {
     public User updateUser(int id) {
         Query query = entityManager.createQuery("SELECT u FROM User u where id =:userId");
         query.setParameter("userId", id);
-        User changeableUser = (User) query.getSingleResult();
-        changeableUser = entityManager.merge(changeableUser);
-        return changeableUser;
+        return (User) query.getSingleResult();
     }
 
     @Transactional
